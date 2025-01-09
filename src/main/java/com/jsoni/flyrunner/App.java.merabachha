@@ -1,0 +1,30 @@
+package com.jsoni.flyrunner;
+
+import java.io.IOException;
+import java.sql.SQLException;
+
+import com.jsoni.flyrunner.annotations.FlyrunnerInitializer;
+import com.jsoni.flyrunner.annotations.FlyrunnerInvoker;
+
+/**
+ * Hello world!
+ */
+@FlyrunnerInvoker
+public class App {
+    public static void main(String[] args) {
+    	
+    	FlyrunnerInitializer.initialize(App.class);
+//    	   try {
+//      VersionProcessor vp= new VersionProcessor();
+//      
+//   
+//		vp.execute();
+//	} catch (IOException e) {
+//		
+//		e.printStackTrace();
+//	} catch (ClassNotFoundException e) {
+//	
+//		e.printStackTrace();
+//	}
+    }
+}
